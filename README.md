@@ -4,9 +4,9 @@
 
 A beautiful, responsive web application that helps students and professionals solve mathematical problems with step-by-step explanations using Google's Gemini AI.
 
-![Maths Doubt Solver – Demo 1](assets/screenshot/demo1.png)
+![Maths Doubt Solver – Demo 1](./assets/screenshots/demo.png)
 
-![Maths Doubt Solver – Demo 2](assets/screenshot/demo2.png)
+![Maths Doubt Solver – Demo 2](./assets/screenshots/demo2.png)
 
 ## ✨ Features
 
