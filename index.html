@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Doubt Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="app-title">Maths Doubt Solver</h1>
+            <p class="app-subtitle">Your AI math companion</p>
+            
+            <div class="mode-tabs">
+                <button class="mode-tab active" data-mode="solver">Problem Solver</button>
+                <button class="mode-tab" data-mode="chat">Chat</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Solver Mode -->
+            <div class="solver-mode active" id="solverMode">
+                <div class="problem-types">
+                    <div class="problem-type" data-type="algebra">
+                        <h3>Algebra</h3>
+                        <p>Equations</p>
+                    </div>
+                    <div class="problem-type" data-type="calculus">
+                        <h3>Calculus</h3>
+                        <p>Derivatives</p>
+                    </div>
+                    <div class="problem-type" data-type="geometry">
+                        <h3>Geometry</h3>
+                        <p>Shapes</p>
+                    </div>
+                    <div class="problem-type" data-type="statistics">
+                        <h3>Statistics</h3>
+                        <p>Data</p>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <textarea 
+                        class="input-field" 
+                        id="problemInput"
+                        placeholder="Enter your math problem here..."
+                        rows="4"
+                    ></textarea>
+                </div>
+
+                <button class="solve-btn" id="solveBtn">
+                    Solve Problem
+                </button>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <span>Solving your problem...</span>
+                </div>
+
+                <div class="result-section" id="resultSection">
+                    <div class="result-title">
+                        <div class="result-icon">✓</div>
+                        Solution
+                    </div>
+                    <div class="result-content" id="resultContent"></div>
+                </div>
+
+                <div class="examples">
+                    <div class="examples-title">Try these examples:</div>
+                    <div class="example-item" data-problem="Solve x^2 + 5x - 14 = 0">
+                        Solve x² + 5x - 14 = 0
+                    </div>
+                    <div class="example-item" data-problem="Find derivative of x^3 + 2x^2 - 5x + 1">
+                        Find derivative of x³ + 2x² - 5x + 1
+                    </div>
+                    <div class="example-item" data-problem="Calculate area of triangle with sides 3, 4, 5">
+                        Triangle area with sides 3, 4, 5
+                    </div>
+                    <div class="example-item" data-problem="Integrate x^2 + 3x from 0 to 2">
+                        ∫(x² + 3x)dx from 0 to 2
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Mode -->
+            <div class="chat-mode" id="chatMode">
+                <div class="chat-container" id="chatContainer">
+                    <div class="chat-message message-ai">
+                        <div class="message-bubble">
+                            Hi! I'm your math assistant. Ask me any math question or send me a problem to solve! 🧮
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-input-container">
+                    <textarea 
+                        class="chat-input" 
+                        id="chatInput"
+                        placeholder="Ask me anything about math..."
+                        rows="1"
+                    ></textarea>
+                    <button class="chat-send-btn" id="chatSendBtn">
+                        ➤
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
